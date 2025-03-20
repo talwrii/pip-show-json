@@ -1,6 +1,6 @@
 import argparse
 import json
-import urllib
+import urllib.request
 
 PARSER = argparse.ArgumentParser(description='Fetch metadata about a pip package')
 PARSER.add_argument('package')
