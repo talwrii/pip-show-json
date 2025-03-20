@@ -1,4 +1,4 @@
-# pip-show
+# pip-show-json
 Show JSON metadata about a pip package.
 
 # Motivation
@@ -6,13 +6,12 @@ Pip used to have facilities to show metadata about packages with `pip show` as w
 
 This is basically a wrapper around `curl https://pypi.org/pypi/$PACKAGE/json` which will show you metadata about a package but it is easy to discover and listed in pypi.
 
-I imagine `pip show` should be changed to use this API. But my expectation is that a patch for this would sit around for a couple of years and I get a distinctly "stop complaining vibe" from the discussion above. So I'll just create a work around and if people use it then it might eventually get merged.
+I imagine `pip show` should be changed to use this apporach. But my expectation is that a patch for this would sit around for a couple of years and I get a distinctly "stop complaining vibe" from the discussion above. So I'll just create a work around and if people use it then it might eventually get merged.
 
 # Usage and Installation
-
 ```
-pipx install pip-show
-pip-show django
+pipx install pip-show-json
+pip-show-json django
 ```
 
 # About me
