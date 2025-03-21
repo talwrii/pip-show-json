@@ -3,12 +3,12 @@ import distutils.core
 
 setuptools.setup(
     name='pip-show-json',
-    version="1.0.2",
+    version="1.0.3",
     author='readwithai',
     long_description_content_type='text/markdown',
     url='https://github.com/talwrii/pip-show',
     author_email='talwrii@gmail.com',
-    description='pip show is broken. pip-show-json fetches json metadata.',
+    description='Show JSON metadata for an uninstalled pip package',
     license='MIT',
     packages=["pip_show"],
     long_description=open('README.md').read(),

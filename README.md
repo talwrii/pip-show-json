@@ -1,12 +1,12 @@
 # pip-show-json
-Show JSON metadata about a pip package.
+Show JSON metadata about an uninstalled pip package like `apt-get show`.
 
 # Motivation
-Pip used to have facilities to show metadata about packages with `pip show` as well as search  with `pip search`. This functionality was disabled due to [load issues](https://discuss.python.org/t/pip-search-is-still-broken/18680).
+It is useful to display information about a package which is not yet installed.
+This command line utility does this and documents how to do this so that it is easily discoverable
 
 This is basically a wrapper around `curl https://pypi.org/pypi/$PACKAGE/json` which will show you metadata about a package but it is easy to discover and listed in pypi.
 
-I imagine `pip show` should be changed to use this apporach. But my expectation is that a patch for this would sit around for a couple of years and I get a distinctly "stop complaining vibe" from the discussion above. So I'll just create a work around and if people use it then it might eventually get merged.
 
 # Usage and Installation
 ```
